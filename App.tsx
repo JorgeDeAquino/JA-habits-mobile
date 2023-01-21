@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import { useFonts, Inter_400Regular, Inter_600SemiBold, Inter_700Bold, Inter_800ExtraBold } from '@expo-google-fonts/inter';
 import { Loading } from './src/components/Loading';
 
@@ -20,7 +19,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Texto de entrada</Text>
-      <StatusBar style="auto" />
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent={true} />
     </View>
   );
 }
